@@ -1,7 +1,8 @@
 import './App.css';
-import Navbar from '../components/Navbar';
-import Home from '../components/Home';
-import Work from '../components/Work';
+import {Navbar,Home,Work,Projects,About} from '../components';
+
+
+
 
 function App() {
   return (
@@ -18,6 +19,14 @@ function App() {
 
         <div className='mt-[100px]'>
           <Work />
+        </div>
+
+        <div className='mt-[100px]'>
+          <Projects />
+        </div>
+
+        <div className='mt-[103px]'>
+          <About /> 
         </div>
 
 

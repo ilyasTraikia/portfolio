@@ -6,7 +6,7 @@ export default function Home() {
 
   <div className='flex flex-col space-y-[40px]'> 
 
-    <div className='flex flex-col sm:flex-row md:space-x-[70px]  lg:space-x-[290px]  items-center'>
+    <div className='flex flex-col sm:flex-row md:space-x-[70px]  lg:space-x-[200px]  items-center'>
 
       <div className='flex flex-col'>
 

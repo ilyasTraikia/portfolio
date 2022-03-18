@@ -10,9 +10,9 @@ export default function About() {
 
      <p className='text-[18px] leading-[36px] text-[#6D6D6D] mt-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet. Ultrices eros in cursus turpis massa tincidunt dui ut. Blandit massa enim nec dui nunc. Mi quis hendrerit dolor magna eget est lorem. In tellus integer feugiat scelerisque varius morbi. Sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet. Ultrices eros in cursus turpis massa tincidunt dui ut. Blandit massa enim nec dui nunc. Mi quis hendrerit dolor magna eget est lorem. In tellus integer feugiat scelerisque varius morbi. Sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus.</p>
 
-     <div className='flex flex-col space-y-[42px] mt-[60px] relative'>
+     <div className='flex flex-col relative space-y-[42px] mt-[60px] '>
 
-       <div className='absolute w-[390px] h-[293px] bg-[#FFE8E8] left-[642px] top-[170px]'>
+       <div className='md:absolute w-[300px] md:w-[400px] h-[293px] bg-[#FFE8E8] right-[5%] top-[-15%]  md:top-[1%] lg:top-[40%] static '>
          <div className='flex flex-col space-y-[20px] ml-[35px] mt-[44.5px]'>
            <div className='flex flex-col'>
              <h3 className='font-medium text-[16px] leading-[24px] text-[background: #7E7C7C] opacity-[60%] tracking-[4px] pb-1'>EMAIL</h3>
@@ -31,7 +31,7 @@ export default function About() {
 
        <img src={bg1}  />
 
-       <div className='w-[500px]'><p className='text-[18px] leading-[36px] text-[#6D6D6D] mt-5'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p></div>
+       <div className='w-[250px] md:w-[500px]'><p className='text-[18px] leading-[36px] text-[#6D6D6D] mt-5'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p></div>
 
      </div>
 

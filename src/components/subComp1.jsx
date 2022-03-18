@@ -9,7 +9,7 @@ export default function subComp1(props) {
     
       /*    impair index , the image is on the right    */
 
-      <div className='flex flex-col items-end  md:flex-row md:items-stretch space-x-[50px]'>
+      <div className='flex flex-col items-end  md:flex-row md:items-stretch space-x-[50px] '>
           
 
           <div className='flex flex-col space-y-[34px] '>

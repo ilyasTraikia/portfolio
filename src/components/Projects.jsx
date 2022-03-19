@@ -7,6 +7,33 @@ export default function Projects() {
 
   const [data, setData] = useState(frontendprojects);
 
+  const [currentpage,setCurrentpage] = useState(1);
+  
+
+  var pagenumber = Math.ceil(data.length /3);
+
+
+
+  function filterArray(element,index,array) {
+     var Index = index+1;
+       if((Index-currentpage) <= (currentpage*2)) {
+         return element;
+       }
+  }
+
+  function pageNumbers() {
+    const row = [];
+    for (var i = 0; i < pagenumber; i++) {
+      var num = pagenumber-i;
+      row.push(<button className='border-2' key={i} onClick={() => console.log(num) }>{pagenumber-i}</button>);
+    }
+    return row;
+  }
+
+  function changePage(pagenumber) {
+         console.log(pagenumber);
+  }
+
    function select() {
      var index = document.getElementById('select').selectedIndex;
       switch (index){
@@ -42,14 +69,20 @@ export default function Projects() {
 
 
            {
-             data.map( (project,index) => (
-            
-            <SubComp1  title={project.title} img={project.img} description={project.description} index= {index}/>  
-             )
-             )
+             data.filter(filterArray).map( (project,index,array) => (
+          
+           
+            <SubComp1  title={project.title} img={project.img} description={project.description} index= {index}/> 
+                
+             ))
 
            }
-         
+          <div className='flex flex-row space-x-8 mx-auto'>
+           {  pageNumbers() }
+          </div>
+
+
+          
 
     </div>
   )

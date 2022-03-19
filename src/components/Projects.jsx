@@ -1,38 +1,50 @@
 import React from 'react';
 import SubComp1 from './subComp1';
 import {frontendprojects,fullstackprojects,androidprojects} from './../constants/data/projects';
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 export default function Projects() {
 
   const [data, setData] = useState(frontendprojects);
 
   const [currentpage,setCurrentpage] = useState(1);
+
+  const [array,setArray] = useState([]);
   
 
-  var pagenumber = Math.ceil(data.length /3);
+ 
 
+    useEffect(
+      ()=> {
+        var pagenumber = Math.ceil(data.length /3);
+        const row = [];
 
+        for (var i = 0; i < pagenumber; i++) {
+          var num = pagenumber-i;
+          row.push(num);
+        }
+        setArray(row);
+      },[data]
+    ) 
 
-  function filterArray(element,index,array) {
+   
+
+  /* function filterArray(element,index,array) {
      var Index = index+1;
-       if((Index-currentpage) <= (currentpage*2)) {
+       if(Index <= (currentpage*3) && Index > ((currentpage -1) *3)) {
          return element;
        }
   }
+  */
 
-  function pageNumbers() {
-    const row = [];
-    for (var i = 0; i < pagenumber; i++) {
-      var num = pagenumber-i;
-      row.push(<button className='border-2' key={i} onClick={() => console.log(num) }>{pagenumber-i}</button>);
-    }
-    return row;
-  }
+  /*  for 2 projects only
+    function filterArray(element,index,array) {
+     var Index = index+1;
+       if(Index <= (3*currentpage) && Index >= ((currentpage*3) / 2)) {
+         return element;
+       }
+  } */
 
-  function changePage(pagenumber) {
-         console.log(pagenumber);
-  }
 
    function select() {
      var index = document.getElementById('select').selectedIndex;
@@ -61,7 +73,7 @@ export default function Projects() {
 
           <div className='max-w-[500px] mx-auto border-2 pr-2 '>
            <select name="" id="select" className=' px-3 py-5 text-[20px] outline-none' onChange={select}>
-             <option value="" selected>font-end projects</option>
+             <option value="" selected>front-end projects</option>
              <option value="">full-stack projects</option>
              <option value="">android projects</option>
            </select>
@@ -69,16 +81,19 @@ export default function Projects() {
 
 
            {
-             data.filter(filterArray).map( (project,index,array) => (
+             data.slice(3*(currentpage-1),3*(currentpage-1+1)).map( (project,index,array) => (
           
            
-            <SubComp1  title={project.title} img={project.img} description={project.description} index= {index}/> 
+            <SubComp1  title={project.title} key={index} img={project.img} description={project.description} index= {index}/> 
                 
              ))
 
            }
           <div className='flex flex-row space-x-8 mx-auto'>
-           {  pageNumbers() }
+           { array.map((element)=> (
+              <button onClick={()=> {setCurrentpage(element)}}>{element}</button>
+           )) }
+           
           </div>
 
 

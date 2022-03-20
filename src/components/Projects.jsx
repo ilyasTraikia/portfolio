@@ -24,6 +24,7 @@ export default function Projects() {
           row.push(num);
         }
         setArray(row);
+        setCurrentpage(1);
       },[data]
     ) 
 

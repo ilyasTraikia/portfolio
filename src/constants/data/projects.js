@@ -20,7 +20,12 @@ const fullstackprojects = [
 
     {title:"fullstack Project 2",description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is crisp in view.",img:img2},
 
-    {title:"fullstack Project 3",description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is crisp in view.",img:img3}  
+    {title:"fullstack Project 3",description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is crisp in view.",img:img3},
+    {title:"fullstack Project 4",description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is crisp in view.",img:img2},
+    {title:"fullstack Project 5",description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is crisp in view.",img:img3},
+    {title:"fullstack Project 6",description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is crisp in view.",img:img1},
+    {title:"fullstack Project 7",description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is crisp in view.",img:img1},
+    {title:"fullstack Project 8",description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is crisp in view.",img:img3}  
 
 ]
 

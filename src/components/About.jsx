@@ -29,7 +29,7 @@ export default function About() {
           </div> 
        </div>
 
-       <img alt='background image' src={bg1}  />
+       <img alt='backgorund' src={bg1}  />
 
        <div className='w-[250px] md:w-[500px]'><p className='text-[18px] leading-[36px] text-[#6D6D6D] mt-5'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p></div>
 

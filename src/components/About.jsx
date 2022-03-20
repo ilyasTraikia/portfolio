@@ -29,7 +29,7 @@ export default function About() {
           </div> 
        </div>
 
-       <img src={bg1}  />
+       <img alt='background image' src={bg1}  />
 
        <div className='w-[250px] md:w-[500px]'><p className='text-[18px] leading-[36px] text-[#6D6D6D] mt-5'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p></div>
 
@@ -37,7 +37,7 @@ export default function About() {
 
      <div className='flex flex-col space-y-[34px] mt-[35px]'>
          <p className='text-[18px] leading-[36px] text-[#6D6D6D] mt-3'>Nec feugiat in fermentum posuere urna nec tincidunt. Vitae suscipit tellus mauris a diam. Ultrices mi tempus imperdiet nulla malesuada. Suspendisse ultrices gravida dictum fusce ut placerat orci. Elit pellentesque habitant morbi tristique senectus et netus et malesuada. Urna id volutpat lacus laoreet non curabitur gravida arcu ac. Lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci. Tristique sollicitudin nibh sit amet commodo. Et odio pellentesque diam volutpat commodo. Aliquam etiam erat velit scelerisque in dictum non consectetur. Rhoncus urna neque viverra justo. Urna cursus eget nunc scelerisque viverra mauris. Odio euismod lacinia at quis. Eu nisl nunc mi ipsum faucibus vitae aliquet.  Lectus arcu bibendum at varius vel pharetra vel turpis nunc. </p>
-         <img className='ml-2' src={signature} width="110"/>
+         <img className='ml-2'  alt='background img' src={signature} width="110"/>
 
      </div>
 

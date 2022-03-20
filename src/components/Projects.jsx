@@ -61,6 +61,10 @@ export default function Projects() {
       case 2: 
         setData(androidprojects);
       break;
+
+      default:
+        setData(frontendprojects);
+
       }
 
         
